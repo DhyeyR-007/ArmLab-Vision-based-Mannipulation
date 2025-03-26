@@ -1,9 +1,10 @@
-# ROB 550 Armlab
+# Vision-based Autonomous Manipulation
 
-In the Armlab, a 5-DOF robotic arm fully autonomously arranges blocks of different sizes, colors and positions into the desired arrangement. Analytical inverse kinematics is used to determine the appropriate waypoints for our desired end-effector position. A heuristic motion planning method was developed to generate
-feasible waypoints. An overhead Intel RealSense LiDAR Camera is utilized to identify blocks on the board. Homogeneous transformations are used to relate pixel and depth coordinates to real-world coordinates. For reliability, the extrinsic matrix is calibrated using four AprilTags with known positions.
+At the Armlab, a 5-degree-of-freedom robotic arm autonomously organizes blocks of varying sizes, colors, and placements into a target configuration. Analytical inverse kinematics calculates the necessary waypoints for positioning the end-effector, while a heuristic motion planning approach generates feasible paths. An overhead Intel RealSense LiDAR camera detects the blocks on the board, and homogeneous transformations convert the pixel and depth data into real-world coordinates. For added accuracy, the extrinsic matrix is calibrated using four AprilTags with known positions.
 
 ## Sensing
+
+Using the LiDAR camera, we developed a reliable vision system that autonomously performs hand-eye calibration with the Interbotix ReactorX-200 5-DOF robotic arm. This system detects and classifies blocks in real time (25 FPS), identifying their locations in both 2D and 3D, as well as their colors (ranging from red to purple), sizes (large and small), and orientations. It achieves a 99.5% accuracy rate in color classification.
 
 <div style="overflow: hidden;">
   <img src="config/image.png" width="500" style="float: right; margin-left: 10px;">
@@ -11,7 +12,7 @@ feasible waypoints. An overhead Intel RealSense LiDAR Camera is utilized to iden
 </div>
 
 
-With the given LiDAR camera, we implemented a robust vision system which is capable of autonomous hand-eye calibration with Interbotix ReactorX-200 5-DOF Robot Arm and perform block detection and classification to identify blocks’ locations (2D and 3D coordinates), colors (rainbow colors from red to purple), sizes (large and small) and orientations in real time (25 FPS) with 99.5% color classification accuracy.
+
 
 
 
@@ -19,10 +20,8 @@ https://user-images.githubusercontent.com/44640904/200190783-980dbcec-e18d-4306-
 
 
 ## Hardwares
-- Interbotix ReactorX-200 5-DOF Robot Arm
-- Intel RealSense LiDAR Camera L515
-- ASUS ROG Laptop with Intel i7-10750H CPU
 
+The system consists of an Interbotix ReactorX-200 5-DOF robotic arm, an Intel RealSense LiDAR Camera L515 for vision processing, and an Dell Laptop with Intel i7 CPU for computation.
 
 
 ## Acting
