@@ -5,7 +5,11 @@ feasible waypoints. An overhead Intel RealSense LiDAR Camera is utilized to iden
 
 ## Sensing
 
-<img src="config/block_detection.png" width="500">
+<div style="overflow: hidden;">
+  <img src="config/image.png" width="500" style="float: right; margin-left: 10px;">
+  <img src="config/block_detection.png" width="500" style="float: left; margin-right: 10px;">
+</div>
+
 
 With the given LiDAR camera, we implemented a robust vision system which is capable of autonomous hand-eye calibration with Interbotix ReactorX-200 5-DOF Robot Arm and perform block detection and classification to identify blocks’ locations (2D and 3D coordinates), colors (rainbow colors from red to purple), sizes (large and small) and orientations in real time (25 FPS) with 99.5% color classification accuracy.
 
