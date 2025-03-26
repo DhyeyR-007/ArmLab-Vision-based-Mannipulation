@@ -1,6 +1,6 @@
 # Vision-based Autonomous Manipulation
 
-A 5-degree-of-freedom robotic arm autonomously organizes blocks of varying sizes, colors, and placements into a target configuration. Analytical inverse kinematics calculates the necessary waypoints for positioning the end-effector, while a heuristic motion planning approach generates feasible paths. An overhead Intel RealSense LiDAR camera detects the blocks on the board, and homogeneous transformations convert the pixel and depth data into real-world coordinates. For added accuracy, the extrinsic matrix is calibrated using four AprilTags with known positions.
+At ArmLab, a 5-degree-of-freedom robotic arm autonomously organizes blocks of varying sizes, colors, and placements into a target configuration. Analytical inverse kinematics calculates the necessary waypoints for positioning the end-effector, while a heuristic motion planning approach generates feasible paths. An overhead Intel RealSense LiDAR camera detects the blocks on the board, and homogeneous transformations convert the pixel and depth data into real-world coordinates. For added accuracy, the extrinsic matrix is calibrated using four AprilTags with known positions.
 
 ## Sensing
 
