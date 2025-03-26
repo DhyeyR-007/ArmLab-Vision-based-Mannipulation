@@ -3,7 +3,6 @@
 At ArmLab, a 5-degree-of-freedom robotic arm autonomously organizes blocks of varying sizes, colors, and placements into a target configuration. Analytical inverse kinematics calculates the necessary waypoints for positioning the end-effector, while a heuristic motion planning approach generates feasible paths. An overhead Intel RealSense LiDAR camera detects the blocks on the board, and homogeneous transformations convert the pixel and depth data into real-world coordinates. For added accuracy, the extrinsic matrix is calibrated using four AprilTags with known positions.
 
 ## Sensing
-
 Using the LiDAR camera, we developed a reliable vision system that autonomously performs hand-eye calibration with the Interbotix ReactorX-200 5-DOF robotic arm. This system detects and classifies blocks in real time (25 FPS), identifying their locations in both 2D and 3D, as well as their colors (ranging from red to purple), sizes (large and small), and orientations. It achieves a 99.5% accuracy rate in color classification.
 
 <div style="overflow: hidden;">
